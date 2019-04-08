@@ -7,6 +7,12 @@ platforms, and with other workflows (like Packer, which I intend to try eventual
 
 Java 8 and Maven is installed
 
+If the server doesn't have enough memory to build it, download it
+
+#+BEGIN_SRC sh
+  curl -L http://central.maven.org/maven2/fish/payara/extras/payara-micro/5.191/payara-micro-5.191.jar > payara.jar
+#+END_SRC
+
 * Run
 
 Default port is 8080
