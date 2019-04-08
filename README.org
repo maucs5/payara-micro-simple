@@ -1,0 +1,18 @@
+* DigitalOcean + Payara Micro
+
+The reason for this repo is to test out Domain Data Grid on DigitalOcean, although it can be tested on other
+platforms, and with other workflows (like Packer, which I intend to try eventually)
+
+* Prerequisite
+
+Java 8 and Maven is installed
+
+* Run
+
+Default port is 8080
+
+#+BEGIN_SRC bash
+  mvn clean install
+  java -jar final-microbundle.jar
+  # java -jar final-microbundle.jar --port 5000
+#+END_SRC
