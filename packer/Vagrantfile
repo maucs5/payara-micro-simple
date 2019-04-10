@@ -1,0 +1,8 @@
+# in windows 10, remember this
+# $Env:VAGRANT_PREFER_SYSTEM_BIN += 0
+
+Vagrant.configure("2") do |cfg|
+  cfg.vm.box = "centos/7"
+  cfg.vm.provision "shell", path: "provision.sh"
+  cfg.vm.network "private_network", type: "dhcp"
+end
